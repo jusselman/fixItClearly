@@ -1,0 +1,80 @@
+/* line 8, C:/Users/Josue/Desktop/fixItClearly/scss/main.scss */
+nav {
+  margin: 30px;
+  background-color: #bcacf6;
+}
+
+/* line 12, C:/Users/Josue/Desktop/fixItClearly/scss/main.scss */
+nav::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+/* line 19, C:/Users/Josue/Desktop/fixItClearly/scss/main.scss */
+.navigation {
+  list-style: none;
+  float: left;
+}
+
+/* line 23, C:/Users/Josue/Desktop/fixItClearly/scss/main.scss */
+.navigation li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+/* line 27, C:/Users/Josue/Desktop/fixItClearly/scss/main.scss */
+.navigation li:first-child {
+  margin: 0;
+}
+
+/* line 31, C:/Users/Josue/Desktop/fixItClearly/scss/main.scss */
+.navigation li a:link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333;
+}
+
+/* line 39, C:/Users/Josue/Desktop/fixItClearly/scss/main.scss */
+.buttons {
+  float: right;
+  top: 6%;
+  right: 5%;
+  position: absolute;
+}
+
+/* line 46, C:/Users/Josue/Desktop/fixItClearly/scss/main.scss */
+.btn-main:link,
+.btn-hot:link {
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 100px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 150px;
+  color: #fff;
+  transition: all 1s ease;
+}
+
+/* line 60, C:/Users/Josue/Desktop/fixItClearly/scss/main.scss */
+.btn-main:link {
+  background-color: #7b7635;
+}
+
+/* line 64, C:/Users/Josue/Desktop/fixItClearly/scss/main.scss */
+.btn-main:hover {
+  background-color: #46431e;
+}
+
+/* line 70, C:/Users/Josue/Desktop/fixItClearly/scss/main.scss */
+.btn-hot:link {
+  background-color: #456aaf;
+}
+
+/* line 74, C:/Users/Josue/Desktop/fixItClearly/scss/main.scss */
+.btn-hot:hover {
+  background-color: #7794c9;
+}
+
+/*# sourceMappingURL=../css/main.map */

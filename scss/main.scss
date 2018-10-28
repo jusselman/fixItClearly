@@ -1,0 +1,77 @@
+$color-primary: rgb(188, 172, 246);
+$secondary-color: #7b7635;
+$tertiary-color: #456aaf;
+$color-text-dark: #333;
+$width-button: 150px;
+$color-text-light: #fff;
+
+nav {
+  margin: 30px;
+  background-color: $color-primary;
+
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+}
+
+.navigation {
+  list-style: none;
+  float: left;
+
+  li {
+    display: inline-block;
+    margin-left: 30px;
+
+    &:first-child {
+      margin: 0;
+    }
+
+    a:link {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $color-text-dark;
+    }
+  }
+}
+
+.buttons {
+  float: right;
+  top: 6%;
+  right: 5%;
+  position: absolute;
+}
+
+.btn-main:link,
+.btn-hot:link {
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 100px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: $width-button;
+  color: $color-text-light;
+  transition: all 1s ease;
+}
+
+.btn-main {
+  &:link {
+    background-color: $secondary-color;
+  }
+
+  &:hover {
+    background-color: darken($secondary-color, 15%);
+  }
+}
+
+.btn-hot {
+  &:link {
+    background-color: $tertiary-color;
+  }
+
+  &:hover {
+    background-color: lighten($tertiary-color, 15%);
+  }
+}
